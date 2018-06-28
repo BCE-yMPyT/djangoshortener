@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'urlshortener.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangogirls',
+        'NAME': 'djangoshortener',
         'USER': 'name',
         'PASSWORD': '',
         'HOST': 'localhost',
