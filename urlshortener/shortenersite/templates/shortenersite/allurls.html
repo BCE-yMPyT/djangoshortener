@@ -1,0 +1,30 @@
+{% extends "shortenersite/base.html" %}
+
+{% block title %}URL Shortner - Make your URL shorter!{% endblock %}
+
+{% block content %}
+
+<div class="panel panel-default">
+ <div class="panel-body">
+    <div id="wrap">
+      <h4><strong>Count of short URL's:</strong>&emsp;{{ urls|length }}</h4>
+    </div>
+  </div>
+</div>
+
+  {% for url in urls %}
+  <div class="panel panel-default">
+   <div class="panel-body">
+      <div id="wrap">
+          <h4><strong>Published:</strong>&emsp;{{ url.pub_date }}</h4>
+          <h4><strong>Short ref:</strong><a href="{{ url.httpurl }}">&emsp;{{ site_url|add:url.short_id }}</a></h4>
+          <h4><strong>Long ref:</strong><a href="{{ url.httpurl }}">&emsp;{{ url.httpurl }}</a></h4>
+          <h4><strong>Text:</strong>&emsp;{{ url.text }}</h4>
+          <h4><strong>Redirect count:</strong>&emsp;{{ url.count }}</h4>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+{% endblock %}

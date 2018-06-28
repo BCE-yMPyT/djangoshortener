@@ -1,0 +1,32 @@
+#content {
+margin-top: 20px;
+margin-bottom: 60px;
+}
+
+a:hover{
+text-decoration: none;
+}
+
+#mainlogo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+header {
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 30px;
+padding-bottom: 10px;
+clear: both;
+}
+
+#wrap {
+max-width: 700px;
+margin: 10px 10px 10px 10px;
+padding: 10px;
+text-align: left;
+}
+#url-result {
+color: #00e000;
+display: hidden;
+}
