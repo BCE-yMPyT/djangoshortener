@@ -7,7 +7,10 @@ For runing this app(locally):
 ```
 python manage.py createsuperuser
 ```
-- Run the: python3 manage.py runserver;
+- Run the:
+```
+python3 manage.py runserver
+```
 - Go to: http://127.0.0.1:8000/
 ***
 * On the main page you can make yours custom url's.
