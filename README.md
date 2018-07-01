@@ -1,5 +1,5 @@
 **The djangoshortener application is designed to shorten existing long url.**
-
+</br>
 #For runing this app(locally):
   ##Activate virtual environment;
   ##Go to: djangoshortener/urlshortener/;
